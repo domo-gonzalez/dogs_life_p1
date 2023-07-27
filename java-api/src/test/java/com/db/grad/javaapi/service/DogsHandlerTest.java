@@ -6,6 +6,8 @@ import com.db.grad.javaapi.repository.DogsRepositoryStub;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class DogsHandlerTest {
@@ -31,6 +33,20 @@ public class DogsHandlerTest {
 
         assertEquals(expectedResult, actualResult);
 
+    }
+    @Test
+    public void checkDogByName(){
+        DogHandler cut = new DogHandler(itsDogRepo);
+        Dog theDog = new Dog();
+        theDog.setName("Bruno");
+        cut.addDog(theDog);
+//        Dog obj = cut.getDogByName("Bruno");
+        ArrayList<Dog> arr1 = new ArrayList<>();
+        arr1.add(theDog);
+        assertEquals("Bruno",cut.getDogByName(theDog.getName()));
+//        cut.getDogByName("Bruno");
+
+//        assertEquals(expectedResult, actualResult);
     }
 
 }
