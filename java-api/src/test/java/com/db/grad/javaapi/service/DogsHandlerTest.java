@@ -52,5 +52,22 @@ public class DogsHandlerTest {
 
 //        assertEquals(expectedResult, actualResult);
     }
+    @Test
+    public void checkDogById(){
+        Dog expectedDog = new Dog();
+        expectedDog.setId(1);
+        expectedDog.setName("Bruno");
+        DogHandler cut = new DogHandler(itsDogRepo);
+        Dog theDog = new Dog();
+        theDog.setName("Bruno");
+        cut.addDog(theDog);
+        theDog = new Dog();
+        theDog.setName("Fluffy");
+        cut.addDog(theDog);
 
+        Dog actualDog = cut.getDogById(1);
+
+        assertEquals(expectedDog.getId(), actualDog.getId());
+        assertEquals(expectedDog.getName(), actualDog.getName());
+    }
 }
