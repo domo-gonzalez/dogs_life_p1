@@ -43,7 +43,11 @@ public class DogsHandlerTest {
 //        Dog obj = cut.getDogByName("Bruno");
         ArrayList<Dog> arr1 = new ArrayList<>();
         arr1.add(theDog);
-        assertEquals("Bruno",cut.getDogByName(theDog.getName()));
+        assertEquals(arr1.get(0),cut.getDogByName(theDog.getName()));
+//        if(theDog instanceof Dog){
+//
+//        }
+//        assertEquals(theDog.getClass(), cut.getDogByName(theDog.getName()));
 //        cut.getDogByName("Bruno");
 
 //        assertEquals(expectedResult, actualResult);
