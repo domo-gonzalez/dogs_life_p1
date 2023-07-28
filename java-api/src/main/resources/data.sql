@@ -17,5 +17,3 @@ values
     ('Mushu', 9, 4),
     ('Toothless', 1, 5)
 ;
-
-
