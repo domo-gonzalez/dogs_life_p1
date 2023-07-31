@@ -1,19 +1,19 @@
-INSERT into owners
-    (name)
-values
-    ('Bruce Wayne'),
-    ('Clark Kent'),
-    ('Jay Garrick'),
-    ('Alan Scott'),
-    ('Hiccup')
-;
+--INSERT into owners
+--    (name)
+--values
+--    ('Bruce Wayne'),
+--    ('Clark Kent'),
+--    ('Jay Garrick'),
+--    ('Alan Scott'),
+--    ('Hiccup')
+--;
 
 INSERT into dogs
-    (name, age, owner_id)
+    (name, age)
 values
-    ('Martha', 11, 1),
-    ('Mochi', 5, 2),
-    ('Barry', 7, 3),
-    ('Mushu', 9, 4),
-    ('Toothless', 1, 5)
+    ('Martha', 11),
+    ('Mochi', 5),
+    ('Barry', 7),
+    ('Mushu', 9),
+    ('Toothless', 1)
 ;
