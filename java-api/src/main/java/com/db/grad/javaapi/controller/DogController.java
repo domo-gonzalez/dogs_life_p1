@@ -18,4 +18,8 @@ public class DogController {
     public String ok(){
         return "App is running";
     }
+//    @RequestMapping("dog/api")
+    @GetMapping("/dog-count")
+    public long getDogCount(){return dogService.getNoOfDogs();}
 }
+
